@@ -1,0 +1,9 @@
+.wrapper {
+    overflow: scroll;
+    width: 100%;
+}   
+    
+    .item {
+        margin-bottom: 2.5rem;
+        margin-top: 1rem;
+    }

@@ -1,0 +1,181 @@
+.wrapper {
+    padding: 2rem;
+}
+
+.tag {
+    height: 70%;
+    overflow: scroll;
+    line-height: 4rem;
+    font-size: 2rem;
+    margin-right: 2rem;
+    margin-top: 4rem;
+    text-align: justify;
+    text-justify: inter-ideograph;
+}
+
+.style0 {
+    color: rgb(144, 0, 0);
+    font-size: '3rem';
+    white-space: nowrap;
+}
+
+.style1 {
+    color: rgb(215, 0, 0);
+    font-size: '3rem';
+    white-space: nowrap;
+}
+
+.style2 {
+    color: rgb(126, 0, 0);
+    font-size: '3rem';
+    white-space: nowrap;
+}
+
+.style3 {
+    color: rgb(168, 89, 0);
+    font-size: '3rem';
+    white-space: nowrap;
+}
+
+.style4 {
+    color: rgb(201, 127, 0);
+    font-size: '3rem';
+    white-space: nowrap;
+}
+
+.style5 {
+    color: rgb(255, 81, 0);
+    font-size: '3rem';
+    white-space: nowrap;
+}
+
+.style6 {
+    color: rgb(255, 157, 0);
+    font-size: '3rem';
+    white-space: nowrap;
+}
+
+.style7 {
+    color: rgb(255, 174, 0);
+    font-size: '3rem';
+    white-space: nowrap;
+}
+
+.style8 {
+    color: rgb(144, 0, 0);
+    font-size: '2rem';
+    white-space: nowrap;
+}
+
+.style9 {
+    color: rgb(215, 0, 0);
+    font-size: '2rem';
+    white-space: nowrap;
+}
+
+.style10 {
+    color: rgb(110, 34, 34);
+    font-size: '2rem';
+    white-space: nowrap;
+}
+
+.style11 {
+    color: rgb(197, 105, 0);
+    font-size: '2rem';
+    white-space: nowrap;
+}
+
+.style12 {
+    color: rgb(224, 206, 99);
+    font-size: '2rem';
+    white-space: nowrap;
+}
+
+.style13 {
+    color: rgb(255, 81, 0);
+    font-size: '2rem';
+    white-space: nowrap;
+}
+
+.style14 {
+    color: rgb(255, 157, 0);
+    font-size: '2rem';
+    white-space: nowrap;
+}
+
+.style15 {
+    color: rgb(255, 174, 0);
+    font-size: '2rem';
+    white-space: nowrap;
+}
+
+.style16 {
+    color: rgb(144, 0, 0);
+    font-size: '2.7rem';
+    white-space: nowrap;
+}
+
+.style17 {
+    color: rgb(215, 0, 0);
+    font-size: '2.3rem';
+    white-space: nowrap;
+}
+
+.style18 {
+    color: rgb(125, 25, 25);
+    font-size: '2.4rem';
+    white-space: nowrap;
+}
+
+.style19 {
+    color: rgb(199, 129, 49);
+    font-size: '2.6rem';
+    white-space: nowrap;
+}
+
+.style20 {
+    color: rgb(250, 192, 91);
+    font-size: '2.8rem';
+    white-space: nowrap;
+}
+
+.style21 {
+    color: rgb(255, 81, 0);
+    font-size: '2.7rem';
+    white-space: nowrap;
+}
+
+.style22 {
+    color: rgb(255, 157, 0);
+    font-size: '2.6rem';
+    white-space: nowrap;
+}
+
+.style23 {
+    color: rgb(255, 174, 0);
+    font-size: '2.8rem';
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+
+    .wrapper {
+        padding: 0.5rem;
+    }
+
+    .tag {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        margin-right: 0;
+        margin-top: 0;
+        text-align: center;
+        height: 100%;
+    }
+
+    .style0, .style1, .style2, .style3, .style4, .style5, .style6, .style7, 
+    .style8, .style9, .style10, .style11, .style12, .style13, .style14, .style15, 
+    .style16, .style17, .style18, .style19, .style20, .style21, .style22, .style23 {
+        word-break: keep-all;
+    }
+
+}

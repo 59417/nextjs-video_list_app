@@ -1,0 +1,55 @@
+.top {
+    cursor: pointer;
+    width: 100%;
+}
+
+.top :hover {
+    background-color: rgb(124, 124, 124);
+}
+
+.container {
+    display: flex;
+    padding: 1rem 2.5rem;
+    width: 245px;
+    height: 90px;
+    align-items: center;
+    color: rgb(249, 249, 249);
+    border-bottom: 1px outset;
+    background-color: rgb(23,23,23);
+    }
+
+    .container span {
+        padding-left: 1rem;
+        padding-top: 5px;
+        font-size: 1.4rem;
+        font-family: 'Scope One', serif;
+        font-weight: 100;
+    }
+
+
+.container_on {
+    display: flex;
+    padding: 1rem 2.5rem;
+    width: 245px;
+    height: 90px;
+    align-items: center;
+    color: rgb(249, 249, 249);
+    border-bottom: 1px outset;
+    /* background-color: rgba(157, 93, 93, 0.5); */
+    position: relative;
+    background-color: rgb(88, 57, 57);
+    }
+
+    .container_on span {
+        padding-left: 1rem;
+        padding-top: 5px;
+        font-size: 1.4rem;
+        font-family: 'Scope One', serif;
+    }
+
+    .triangle {
+        font: var(--fa-solid);
+        content: "\f0da";
+    }
+
+

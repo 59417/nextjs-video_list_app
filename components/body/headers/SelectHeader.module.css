@@ -1,0 +1,11 @@
+.select {
+    font-size: 1.3rem;
+    width: 30vw;
+    max-width: 430px;
+}
+
+@media (max-width: 768px) {
+    .select {
+        width: auto;
+    }
+}

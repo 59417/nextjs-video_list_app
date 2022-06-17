@@ -1,0 +1,77 @@
+.thumbnail {
+    width: 266px;
+    height: 150px;
+    overflow: hidden; 
+}
+
+.thumbnail_hover {
+    box-shadow: 0px 0px 3px rgba(256, 256, 256, 0.8);
+    width: 266px;
+    height: 150px;
+    overflow: hidden; 
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.hovertext {
+    visibility: hidden;
+    position: absolute;
+}   
+
+.hovertext_show {
+    visibility: visible;
+    position: absolute;
+    right: 0;
+    bottom: 19%;
+    text-align: center;
+    color:rgba(212, 212, 212, 0.5);
+    font-size: 3px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0 1%;
+    
+}   
+
+
+.title {
+    font-size: 1.2rem;
+    font-family: 'Noto Sans TC', sans-serif;
+    color: rgb(159, 159, 159);
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.title_hover {
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    letter-spacing: 3px;
+    text-align: center;
+    cursor: pointer;  
+}
+
+@media (max-width: 768px) {
+    .thumbnail {
+        max-width: 500px;
+        max-height: 283px;
+    }
+
+    .thumbnail_hover {
+        max-width: 500px;
+        max-height: 283px;
+    }
+
+    .hovertext_show {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    .thumbnail {
+        width: 220px;
+        height: 125px;
+    }
+
+    .thumbnail_hover {
+        width: 220px;
+        height: 125px;
+    }
+}
