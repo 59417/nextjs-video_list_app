@@ -57,7 +57,7 @@ export default Categories;
 
 
 export async function getServerSideProps(context) {
-  const res = await fetch(`http://localhost:3001/api/category`);
+  const res = await fetch(`${process.env.API_URL}/api/category`);
   const data = await res.json();
 
   return {

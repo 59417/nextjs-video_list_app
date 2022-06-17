@@ -22,3 +22,133 @@ https://github.com/cli/cli/releases/tag/v2.12.1
 (base) a17@17de-MBP video-list-app % gh auth logout
 ? Are you sure you want to log out of github.com account '59417'? Yes
 ✓ Logged out of github.com account '59417'
+
+
+(base) a17@17de-MBP video-list-app % git add .
+(base) a17@17de-MBP video-list-app % git commit -m "Next.js video-list app for deployment"
+[main 1d0eb12] Next.js video-list app for deployment
+ 239 files changed, 16335 insertions(+), 431 deletions(-)
+ create mode 100644 .env
+ create mode 100644 components/TestFavs.js
+ create mode 100644 components/TestFavs.module.css
+ create mode 100644 components/body/AllList.js
+ create mode 100644 components/body/HashtagContainer.js
+ create mode 100644 components/body/HashtagContainer.module.css
+ create mode 100644 components/body/HomeBody.js
+ create mode 100644 components/body/HomeBody.module.css
+ create mode 100644 components/body/ListContainer.js
+ create mode 100644 components/body/ListContainer.module.css
+ create mode 100644 components/body/SelectContainer.js
+ create mode 100644 components/body/SelectContainer.module.css
+ create mode 100644 components/body/TagsBody.js
+ create mode 100644 components/body/TagsBody.module.css
+ create mode 100644 components/body/backstage/EditIcon.js
+ create mode 100644 components/body/backstage/EditList.js
+ create mode 100644 components/body/backstage/EditList.module.css
+ create mode 100644 components/body/backstage/Login.js
+ create mode 100644 components/body/backstage/Login.module.css
+ create mode 100644 components/body/backstage/VideoEdit.js
+ create mode 100644 components/body/backstage/VideoEdit.module.css
+ create mode 100644 components/body/backstage/[Cart].js
+ create mode 100644 components/body/blocks/Video.js
+ create mode 100644 components/body/blocks/Video.module.css
+ create mode 100644 components/body/blocks/VideoContainer.js
+ create mode 100644 components/body/blocks/VideoContainer.module.css
+ create mode 100644 components/body/blocks/VideoDescription.js
+ create mode 100644 components/body/blocks/VideoDescription.module.css
+ create mode 100644 components/body/blocks/VideoImage.js
+ create mode 100644 components/body/blocks/VideoImage.module.css
+ create mode 100644 components/body/blocks/VideoList.js
+ create mode 100644 components/body/blocks/VideoList.module.css
+ create mode 100644 components/body/detail/DetailImage.js
+ create mode 100644 components/body/detail/Details.js
+ create mode 100644 components/body/detail/Details.module.css
+ create mode 100644 components/body/goback/GoBack.js
+ create mode 100644 components/body/headers/AllHeader.js
+ create mode 100644 components/body/headers/AllHeader.module.css
+ create mode 100644 components/body/headers/HashtagHeader.js
+ create mode 100644 components/body/headers/HashtagHeader.module.css
+ create mode 100644 components/body/headers/SelectHeader.js
+ create mode 100644 components/body/headers/SelectHeader.module.css
+ create mode 100644 components/body/headers/TagHeader.js
+ create mode 100644 components/body/headers/TagHeader.module.css
+ create mode 100644 components/body/marquee/Marquee.js
+ create mode 100644 components/body/marquee/Marquee.module.css
+ create mode 100644 components/body/marquee/VideoThumbnail.js
+ create mode 100644 components/body/marquee/VideoThumbnail.module.css
+ create mode 100644 components/body/tags/TagsRandom.js
+ create mode 100644 components/data.js
+ create mode 100644 components/data_all.js
+ create mode 100644 components/layout/Header.js
+ create mode 100644 components/layout/Header.module.css
+ create mode 100644 components/layout/Layout.js
+ create mode 100644 components/layout/Layout.module.css
+ create mode 100644 components/random.js
+ create mode 100644 components/sidebar/MenuIcon.js
+ create mode 100644 components/sidebar/Sidebar.js
+ create mode 100644 components/sidebar/Sidebar.module.css
+ create mode 100644 lib/db.js
+ create mode 100644 mylog.log
+ create mode 100644 package_json_deleted.js
+ rewrite pages/_app.js (67%)
+ create mode 100644 pages/api/category.js
+ create mode 100644 pages/api/favorite.js
+ create mode 100644 pages/api/loginform.js
+ create mode 100644 pages/api/tags-dict.js
+ create mode 100644 pages/api/videos.js
+ create mode 100644 pages/backstage/edit-list/[editId].js
+ create mode 100644 pages/backstage/edit-list/index.js
+ create mode 100644 pages/backstage/index.js
+ create mode 100644 pages/category/index.js
+ create mode 100644 pages/favorites/harlan-coben.js
+ create mode 100644 pages/favorites/index.js
+ create mode 100644 pages/favorites/oriol-paulo.js
+ create mode 100644 pages/favorites/ryan-murphy.js
+ create mode 100644 pages/favorites/series.js
+ create mode 100644 pages/favorites/the-conjuring-universe.js
+ create mode 100644 pages/hashtag/[tagId].js
+ create mode 100644 pages/hashtag/index.js
+ rewrite pages/index.js (96%)
+ create mode 100644 pages/test.js
+ create mode 100644 pages/view-all/[videoId].js
+ create mode 100644 pages/view-all/index.js
+ create mode 100644 public/babe.JPG
+ create mode 100644 public/datas/netflix.json
+ create mode 100644 public/datas/netflix_id.json
+ create mode 100644 public/datas/netflix_id2.json
+ create mode 100644 public/datas/netflix_keep129.json
+ create mode 100644 public/datas/netflix_tag2.json
+ delete mode 100644 public/favicon.ico
+ create mode 100644 public/film.png
+ create mode 100644 public/film_pic/DSC_00462.png
+ create mode 100644 public/film_pic/DSC_02532.png
+ create mode 100644 public/film_pic/DSC_05372.png
+ create mode 100644 public/film_pic/DSC_13702.png
+ create mode 100644 public/film_pic/DSC_19982.png
+ create mode 100644 public/film_pic/DSC_35712.png
+ create mode 100644 public/film_pic/DSC_38942.png
+ create mode 100644 public/film_pic/DSC_40262.png
+ create mode 100644 public/header.png
+ delete mode 100644 public/vercel.svg
+ create mode 100644 public/video_thumbnail/02bde40d.png
+ create mode 100644 public/video_thumbnail/.......
+ create mode 100644 public/video_thumbnail/fb44c1ae.png
+ create mode 100644 py/.ipynb_checkpoints/filters-checkpoint.ipynb
+ create mode 100644 py/filters.ipynb
+ create mode 100644 res.js
+ rewrite styles/Home.module.css (96%)
+ create mode 100644 styles/app.scss
+(base) a17@17de-MBP video-list-app % git branch -M main
+(base) a17@17de-MBP video-list-app % git remote add origin git@github.com:59417/nextjs-video_list_app.git
+(base) a17@17de-MBP video-list-app % git push -u origin main
+枚舉物件: 284, 完成.
+物件計數中: 100% (284/284), 完成.
+使用 2 個執行緒進行壓縮
+壓縮物件中: 100% (277/277), 完成.
+寫入物件中: 100% (284/284), 63.63 MiB | 1.28 MiB/s, 完成.
+總共 284 (差異 23)，復用 0 (差異 0)，重用包 0
+remote: Resolving deltas: 100% (23/23), done.
+To github.com:59417/nextjs-video_list_app.git
+ * [new branch]      main -> main
+分支 'main' 設定為追蹤來自 'origin' 的遠端分支 'main'。
+

@@ -22,7 +22,9 @@ function MyApp({ Component, pageProps }) {
 // };
 
 MyApp.getInitialProps = async (appContext) => {
-  const res = await fetch(`http://localhost:3001/api/videos`);
+  // console.log(process.env.API_URL);
+  const res = await fetch(`${process.env.API_URL}/api/videos`);
+  // const res = await fetch(`http://localhost:3001/api/videos`);
   // const tagsRes = await fetch(`/api/tags-dict`);
   const data = await res.json();
   // const tagsData = await tagsRes.json();

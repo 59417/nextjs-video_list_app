@@ -8,6 +8,8 @@ import GoBack from '../components/body/goback/GoBack';
 
 function HomePage(props) {
 
+  console.log(process.env.API_URL);
+
   const date = new Date();
   // const nowTime = date.toTimeString();
   const nowTime = date.getSeconds();
@@ -61,11 +63,11 @@ export default HomePage;
 
 
 export async function getServerSideProps(context) {
-  const favsRes = await fetch(`http://localhost:3001/api/favorite`);
+  const favsRes = await fetch(`${process.env.API_URL}/api/favorite`);
   const favsData = await favsRes.json();
   const favsMovie = favsData.find(obj => obj.filter === 'movie');
   const favsSeries = favsData.find(obj => obj.filter === 'series');
-  const catsRes = await fetch(`http://localhost:3001/api/category`);
+  const catsRes = await fetch(`${process.env.API_URL}/api/category`);
   const catsData = await catsRes.json();
   const docus = catsData.find(obj => obj.filter === 'documentaries');
 

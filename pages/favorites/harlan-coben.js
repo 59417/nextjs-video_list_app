@@ -59,7 +59,7 @@ export default Favorites;
 
 
 export async function getServerSideProps(context) {
-  const res = await fetch(`http://localhost:3001/api/favorite`);
+  const res = await fetch(`${process.env.API_URL}/api/favorite`);
   const data = await res.json();
 
   return {
