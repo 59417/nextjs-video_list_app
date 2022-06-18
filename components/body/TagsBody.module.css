@@ -4,7 +4,7 @@
 
 .tag {
     height: 70%;
-    width: 70vw;
+    width: calc(100vw -245px - 6rem);
     overflow: scroll;
     line-height: 4rem;
     font-size: 2rem;
@@ -12,6 +12,9 @@
     margin-top: 4rem;
     text-align: justify;
     text-justify: inter-ideograph;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .style0 {
