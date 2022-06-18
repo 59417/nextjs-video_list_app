@@ -65,7 +65,7 @@ function Marquee (props) {
             <div className={classes.sepline}></div>
                 <div className={classes.container}>
                     <div className={classes.turnleft} onClick={handleClickLeft}>
-                        <i className="fa-solid fa-chevron-left fa-5x"></i>
+                        <i className="fa-solid fa-chevron-left fa-5x" style={{textRendering: 'optimizeLegibility'}}></i>
                     </div>
                     <div className={classes.video_container}>
                         {data.map((video) => (
