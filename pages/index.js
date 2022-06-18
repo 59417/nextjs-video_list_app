@@ -4,7 +4,7 @@ import classes from '../styles/Home.module.css';
 import Sidebar from '../components/sidebar/Sidebar';
 import HomeBody from '../components/body/HomeBody';
 import GoBack from '../components/body/goback/GoBack';
-import { TAGS_DICT, FAVORITE_IDS, CATEGORY_IDS } from '../components/data';
+import { TAGS_DICT, FAVORITE_IDS, CATEGORY_IDS } from '../components/mongodb_data';
 
 
 function HomePage(props) {
@@ -65,13 +65,13 @@ export default HomePage;
 
 export async function getServerSideProps(context) {
   try {
-    const favsRes = await fetch(`${process.env.API_URL}/api/favorite`);
-    const favsData = await favsRes.json();
-    const favsMovie = favsData.find(obj => obj.filter === 'movie');
-    const favsSeries = favsData.find(obj => obj.filter === 'series');
-    const catsRes = await fetch(`${process.env.API_URL}/api/category`);
-    const catsData = await catsRes.json();
-    const docus = catsData.find(obj => obj.filter === 'documentaries');
+    // const favsRes = await fetch(`${process.env.API_URL}/api/favorite`);
+    // const favsData = await favsRes.json();
+    // const favsMovie = favsData.find(obj => obj.filter === 'movie');
+    // const favsSeries = favsData.find(obj => obj.filter === 'series');
+    // const catsRes = await fetch(`${process.env.API_URL}/api/category`);
+    // const catsData = await catsRes.json();
+    // const docus = catsData.find(obj => obj.filter === 'documentaries');
   
     return {
       props: { 

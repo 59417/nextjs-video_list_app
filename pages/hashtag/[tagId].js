@@ -4,7 +4,7 @@ import classes from '../../styles/Home.module.css';
 import Sidebar from '../../components/sidebar/Sidebar';
 import HashtagContainer from '../../components/body/HashtagContainer';
 import GoBack from '../../components/body/goback/GoBack';
-import { TEMP_LIST, TAGS_DICT } from '../../components/data';
+import { TAGS_DICT } from '../../components/data';
 // import { ALL_LIST } from '../../components/data_all';
 
 

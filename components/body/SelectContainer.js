@@ -2,7 +2,7 @@ import { useState } from 'react';
 import VideoList from './blocks/VideoList'
 import SelectHeader from './headers/SelectHeader';
 import classes from './SelectContainer.module.css';
-import { CATEGORY_IDS } from '../data';
+// import { CATEGORY_IDS } from '../data';
 // import { ALL_LIST } from '../data_all';
 
 

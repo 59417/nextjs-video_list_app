@@ -1,4 +1,3 @@
-// import { TEMP_LIST } from './data';
 import { ALL_LIST } from './data_all';
 
 const itemTags = ALL_LIST.map(item => 

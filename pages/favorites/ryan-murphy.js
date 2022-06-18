@@ -4,7 +4,7 @@ import classes from '../../styles/Home.module.css';
 import Sidebar from '../../components/sidebar/Sidebar';
 import ListContainer from '../../components/body/ListContainer';
 import GoBack from '../../components/body/goback/GoBack';
-import { TAGS_DICT, FAVORITE_IDS, CATEGORY_IDS } from '../../components/data';
+import { TAGS_DICT, FAVORITE_IDS, CATEGORY_IDS } from '../../components/mongodb_data';
 
 
 
