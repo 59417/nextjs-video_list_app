@@ -4,6 +4,8 @@ import classes from '../../styles/Home.module.css';
 import Sidebar from '../../components/sidebar/Sidebar';
 import ListContainer from '../../components/body/ListContainer';
 import GoBack from '../../components/body/goback/GoBack';
+import { TAGS_DICT, FAVORITE_IDS, CATEGORY_IDS } from '../../components/data';
+
 
 
 
@@ -58,10 +60,15 @@ export default Favorites;
 
 
 export async function getServerSideProps(context) {
-  const res = await fetch(`${process.env.API_URL}/api/favorite`);
-  const data = await res.json();
-
-  return {
-    props: { favsData: data },
+  try {
+    const res = await fetch(`${process.env.API_URL}/api/favorite`);
+    const data = await res.json();
+    return {
+      props: { favsData: data ? data : FAVORITE_IDS },
+    }
+  } catch (error) {
+    return {
+      props: { favsData: FAVORITE_IDS },
+    }
   }
 };

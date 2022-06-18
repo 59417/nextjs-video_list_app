@@ -4,6 +4,7 @@ import classes from '../../styles/Home.module.css';
 import Sidebar from '../../components/sidebar/Sidebar';
 import SelectContainer from '../../components/body/SelectContainer';
 import GoBack from '../../components/body/goback/GoBack';
+import { TAGS_DICT, FAVORITE_IDS, CATEGORY_IDS } from '../../components/data';
 
 
 
@@ -57,10 +58,15 @@ export default Categories;
 
 
 export async function getServerSideProps(context) {
-  const res = await fetch(`${process.env.API_URL}/api/category`);
-  const data = await res.json();
-
-  return {
-    props: { catsData: data },
+  try {
+    const res = await fetch(`${process.env.API_URL}/api/category`);
+    const data = await res.json();
+    return {
+      props: { catsData: data ? data : CATEGORY_IDS },
+    }
+  } catch (error) {
+    return {
+      props: { catsData: CATEGORY_IDS },
+    }
   }
 };

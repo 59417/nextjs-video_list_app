@@ -2,6 +2,8 @@ import Layout from '../components/layout/Layout';
 import '../styles/globals.css';
 import '../styles/app.scss';  // import bulma 
 // >>> 不用在每個.js import 'bulma/css/bulma.css';
+import { TAGS_DICT, FAVORITE_IDS, CATEGORY_IDS } from '../components/data';
+import { ALL_LIST } from '../components/data_all';
 
 
 function MyApp({ Component, pageProps }) {
@@ -12,27 +14,33 @@ function MyApp({ Component, pageProps }) {
   )
 };
 
-// export async function getServerSideProps(context) {
-//   const res = await fetch(`http://localhost:3001/api/videos`);
-//   const data = await res.json();
-
-//   return {
-//     pageProps: { fetchData: data },
-//   }
-// };
 
 MyApp.getInitialProps = async (appContext) => {
   // console.log(process.env.API_URL);
-  const res = await fetch(`${process.env.API_URL}/api/videos`);
-  // const res = await fetch(`http://localhost:3001/api/videos`);
-  // const tagsRes = await fetch(`/api/tags-dict`);
-  const data = await res.json();
-  // const tagsData = await tagsRes.json();
-  return {
-    pageProps: { 
-      fetchData: data,
-      // tagsData: tagsData,
-    },
+  try {
+    const res = await fetch(`${process.env.API_URL}/api/videos`);
+    const data = await res.json();
+    return {
+      pageProps: { 
+        fetchData: data ? data : ALL_LIST,
+        importData: {
+          allData: ALL_LIST,
+          tagsData: TAGS_DICT,
+          favsData: FAVORITE_IDS,
+          catsData: CATEGORY_IDS
+        }
+    }};
+  } catch (error) {
+    return {
+      pageProps: { 
+        fetchData: ALL_LIST,
+        // importData: {
+          // allData: ALL_LIST,
+        //   tagsData: TAGS_DICT,
+        //   favsData: FAVORITE_IDS,
+        //   catsData: CATEGORY_IDS
+        // }
+    }};
   };
 };
 
