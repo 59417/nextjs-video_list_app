@@ -269,3 +269,33 @@ remote: Resolving deltas: 100% (13/13), completed with 13 local objects.
 To github.com:59417/nextjs-video_list_app.git
    febab8f..334695e  main -> main
 分支 'main' 設定為追蹤來自 'origin' 的遠端分支 'main'。
+
+
+-------------------  git v.8  --------------------
+
+(base) a17@17de-MBP video-list-app % git add .                                 
+(base) a17@17de-MBP video-list-app % git commit -m "Edit Homepage <Sidebar>"   
+[main 7ef5962] Edit Homepage <Sidebar>
+ 14 files changed, 178 insertions(+), 15 deletions(-)
+ create mode 100644 components/sidebar/SidebarMobile.js
+ delete mode 100644 public/babe.JPG
+ rewrite public/film_pic/DSC_00462.png (93%)
+ rewrite public/film_pic/DSC_02532.png (94%)
+ rewrite public/film_pic/DSC_05372.png (93%)
+ rewrite public/film_pic/DSC_13702.png (94%)
+ rewrite public/film_pic/DSC_19982.png (93%)
+ rewrite public/film_pic/DSC_35712.png (94%)
+ rewrite public/film_pic/DSC_38942.png (93%)
+ rewrite public/film_pic/DSC_40262.png (94%)
+ rewrite public/header.png (97%)
+(base) a17@17de-MBP video-list-app % git push -u origin main                 
+枚舉物件: 40, 完成.
+物件計數中: 100% (40/40), 完成.
+使用 2 個執行緒進行壓縮
+壓縮物件中: 100% (21/21), 完成.
+寫入物件中: 100% (21/21), 5.15 MiB | 1.09 MiB/s, 完成.
+總共 21 (差異 7)，復用 0 (差異 0)，重用包 0
+remote: Resolving deltas: 100% (7/7), completed with 7 local objects.
+To github.com:59417/nextjs-video_list_app.git
+   334695e..7ef5962  main -> main
+分支 'main' 設定為追蹤來自 'origin' 的遠端分支 'main'。

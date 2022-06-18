@@ -20,15 +20,15 @@ function HomePage(props) {
   const isMenu = props.menuState;
   const setMenu = props.setMenu;
 
-  // const [winWidth, setWinWidth] = useState(0);
+  const [winWidth, setWinWidth] = useState(0);
 
-  // useEffect(() => {
-  //   setMenu(false);
-  //   window.addEventListener('resize', setWinWidth);
-  //   return () => {
-  //     window.removeEventListener('resize', setWinWidth(window.innerWidth))
-  //   }
-  // }, [setMenu, winWidth]);
+  useEffect(() => {
+    setMenu(false);
+    // window.addEventListener('resize', setWinWidth);
+    // return () => {
+    //   window.removeEventListener('resize', setWinWidth(window.innerWidth))
+    // }
+  }, [setMenu, winWidth]);
   // console.log(winWidth);
 
   return (
