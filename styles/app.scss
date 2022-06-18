@@ -1,5 +1,3 @@
-// @import "~bulma/bulma.sass";
-@import '../node_modules/bulma/bulma.sass';
 
 $input-focus-border-color: grey;  // seems not work
 $input-focus-box-shadow-color: grey;
@@ -20,3 +18,8 @@ $input-focus-box-shadow-color: grey;
 // font-family: 'Noto Sans TC', sans-serif;
 // font-family: 'Scope One', serif;
 // font-family: 'Tapestry', cursive;
+
+
+
+// @import "~bulma/bulma.sass";
+@import '../node_modules/bulma/bulma.sass';

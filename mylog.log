@@ -357,3 +357,22 @@ remote: Resolving deltas: 100% (16/16), completed with 10 local objects.
 To github.com:59417/nextjs-video_list_app.git
    40f83c2..6a200d4  main -> main
 分支 'main' 設定為追蹤來自 'origin' 的遠端分支 'main'。
+
+
+-------------------  git v.12  --------------------
+
+(base) a17@17de-MBP video-list-app % git add .                                                    
+(base) a17@17de-MBP video-list-app % git commit -m "Modify app.scss bulma import"                
+[main 7e2024e] Modify app.scss bulma import
+ 2 files changed, 21 insertions(+), 1 deletion(-)
+(base) a17@17de-MBP video-list-app % git push -u origin main                      
+枚舉物件: 9, 完成.
+物件計數中: 100% (9/9), 完成.
+使用 2 個執行緒進行壓縮
+壓縮物件中: 100% (5/5), 完成.
+寫入物件中: 100% (5/5), 746 位元組 | 746.00 KiB/s, 完成.
+總共 5 (差異 3)，復用 0 (差異 0)，重用包 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To github.com:59417/nextjs-video_list_app.git
+   6a200d4..7e2024e  main -> main
+分支 'main' 設定為追蹤來自 'origin' 的遠端分支 'main'。
