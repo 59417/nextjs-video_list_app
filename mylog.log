@@ -229,3 +229,43 @@ remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
 To github.com:59417/nextjs-video_list_app.git
    53b502b..02cee2a  main -> main
 分支 'main' 設定為追蹤來自 'origin' 的遠端分支 'main'。
+
+
+-------------------  git v.6  --------------------
+
+(base) a17@17de-MBP video-list-app % git add .                                                     
+(base) a17@17de-MBP video-list-app % git commit -m "Add mongodb_data.js"                           
+[main febab8f] Add mongodb_data.js
+ 15 files changed, 441 insertions(+), 20 deletions(-)
+ create mode 100644 components/mongodb_data.js
+(base) a17@17de-MBP video-list-app % git push -u origin main             
+枚舉物件: 48, 完成.
+物件計數中: 100% (48/48), 完成.
+使用 2 個執行緒進行壓縮
+壓縮物件中: 100% (24/24), 完成.
+寫入物件中: 100% (25/25), 6.38 KiB | 1.59 MiB/s, 完成.
+總共 25 (差異 17)，復用 0 (差異 0)，重用包 0
+remote: Resolving deltas: 100% (17/17), completed with 17 local objects.
+To github.com:59417/nextjs-video_list_app.git
+   02cee2a..febab8f  main -> main
+分支 'main' 設定為追蹤來自 'origin' 的遠端分支 'main'。
+
+
+-------------------  git v.7  --------------------
+
+(base) a17@17de-MBP video-list-app % git add .                           
+(base) a17@17de-MBP video-list-app % git commit -m "Toggle fetch comment line" 
+[main 334695e] Toggle fetch comment line
+ 9 files changed, 16 insertions(+), 107 deletions(-)
+ delete mode 100644 components/body/backstage/[Cart].js
+(base) a17@17de-MBP video-list-app % git push -u origin main                   
+枚舉物件: 31, 完成.
+物件計數中: 100% (31/31), 完成.
+使用 2 個執行緒進行壓縮
+壓縮物件中: 100% (15/15), 完成.
+寫入物件中: 100% (16/16), 1.22 KiB | 1.22 MiB/s, 完成.
+總共 16 (差異 13)，復用 0 (差異 0)，重用包 0
+remote: Resolving deltas: 100% (13/13), completed with 13 local objects.
+To github.com:59417/nextjs-video_list_app.git
+   febab8f..334695e  main -> main
+分支 'main' 設定為追蹤來自 'origin' 的遠端分支 'main'。
