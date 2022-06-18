@@ -18,8 +18,8 @@ function MyApp({ Component, pageProps }) {
 MyApp.getInitialProps = async (appContext) => {
   // console.log(process.env.API_URL);
   try {
-    const res = await fetch(`${process.env.API_URL}/api/videos`);
-    const data = await res.json();
+    // const res = await fetch(`${process.env.API_URL}/api/videos`);
+    // const data = await res.json();
     return {
       pageProps: { 
         fetchData: ALL_LIST,

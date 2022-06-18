@@ -61,8 +61,8 @@ export default Favorites;
 
 export async function getServerSideProps(context) {
   try {
-    const res = await fetch(`${process.env.API_URL}/api/favorite`);
-    const data = await res.json();
+    // const res = await fetch(`${process.env.API_URL}/api/favorite`);
+    // const data = await res.json();
     return {
       props: { favsData: FAVORITE_IDS },
     }

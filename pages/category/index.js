@@ -59,8 +59,8 @@ export default Categories;
 
 export async function getServerSideProps(context) {
   try {
-    const res = await fetch(`${process.env.API_URL}/api/category`);
-    const data = await res.json();
+    // const res = await fetch(`${process.env.API_URL}/api/category`);
+    // const data = await res.json();
     return {
       props: { catsData: CATEGORY_IDS },
     }
