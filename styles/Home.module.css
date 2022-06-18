@@ -63,13 +63,13 @@
 
 
 @media (min-width: 769px) {
-  .goback {
-    right: 0; 
+  .sidebar_mobile {
+    display: none; 
   }
 }
 
 @media (max-width: 1023px) {
-  .sidebar_mobile {
+  .goback {
     display: none; 
   }
 }
