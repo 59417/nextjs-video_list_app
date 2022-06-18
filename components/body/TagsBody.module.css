@@ -4,6 +4,7 @@
 
 .tag {
     height: 70%;
+    width: 70vw;
     overflow: scroll;
     line-height: 4rem;
     font-size: 2rem;
@@ -166,6 +167,7 @@
     .tag {
         font-size: 1.2rem;
         line-height: 2rem;
+        width: 96vw;
         margin-right: 0;
         margin-top: 0;
         text-align: center;
