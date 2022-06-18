@@ -338,3 +338,22 @@ remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
 To github.com:59417/nextjs-video_list_app.git
    638ee95..ec581e5  main -> main
 分支 'main' 設定為追蹤來自 'origin' 的遠端分支 'main'。
+
+
+-------------------  git v.11  --------------------
+
+(base) a17@17de-MBP video-list-app % git add .                                                  
+(base) a17@17de-MBP video-list-app % git commit -m "All pages - modify Sidebar and SidebarMobile"   
+[main 6a200d4] All pages - modify Sidebar and SidebarMobile
+ 15 files changed, 243 insertions(+), 120 deletions(-)
+(base) a17@17de-MBP video-list-app % git push -u origin main                                      
+枚舉物件: 47, 完成.
+物件計數中: 100% (47/47), 完成.
+使用 2 個執行緒進行壓縮
+壓縮物件中: 100% (23/23), 完成.
+寫入物件中: 100% (24/24), 3.34 KiB | 1.11 MiB/s, 完成.
+總共 24 (差異 16)，復用 0 (差異 0)，重用包 0
+remote: Resolving deltas: 100% (16/16), completed with 10 local objects.
+To github.com:59417/nextjs-video_list_app.git
+   40f83c2..6a200d4  main -> main
+分支 'main' 設定為追蹤來自 'origin' 的遠端分支 'main'。
