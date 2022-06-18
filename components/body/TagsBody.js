@@ -52,7 +52,7 @@ function TagsBody(props) {
             <div className={classes.tag}>
                 {newAllTags.flat().map((tag) => (
                      <Link href={`/hashtag/${tag}`} key={tag} >
-                        <span className={getClass(tag+randomN)} style={{cursor: 'pointer'}}>
+                        <span className={getClass(tag+randomN)} style={{cursor: 'pointer', overflowWrap: 'break-word'}}>
                         {/* <span style={{fontSize: `${fontsize}`, color: `${color}`}}> */}
                             #{getChiTag(tag)}&emsp;
                         </span>
