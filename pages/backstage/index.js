@@ -2,6 +2,7 @@ import { Fragment, useEffect, useState } from 'react';
 import Head from 'next/head';
 import classes from '../../styles/Home.module.css';
 import Sidebar from '../../components/sidebar/Sidebar';
+import SidebarMobile from '../../components/sidebar/SidebarMobile';
 // import ListContainer from '../../components/body/ListContainer';
 import GoBack from '../../components/body/goback/GoBack';
 import Login from '../../components/body/backstage/Login';
@@ -11,15 +12,16 @@ function BackstageLogin(props) {
   const isMenu = props.menuState;
   const setMenu = props.setMenu;
 
-  const [winWidth, setWinWidth] = useState(0);
+  // const [winWidth, setWinWidth] = useState(0);
 
   useEffect(() => {
     setMenu(false);
-    window.addEventListener('resize', setWinWidth);
-    return () => {
-      window.removeEventListener('resize', setWinWidth(window.innerWidth))
-    }
-  }, [setMenu, winWidth]);
+    // window.addEventListener('resize', setWinWidth);
+    // return () => {
+    //   window.removeEventListener('resize', setWinWidth(window.innerWidth))
+    // }
+  }, [setMenu]);
+  // console.log(winWidth);
 
   return (
     <Fragment>
@@ -34,9 +36,16 @@ function BackstageLogin(props) {
       <div className={classes.body}>
         <div 
           className={classes.sidebar} 
-          style={winWidth>768 ? null : isMenu ? null : {'display': 'none'}}
-        >     
-          <Sidebar turn_on={'Backstage'} />
+          // style={winWidth>768 ? null : isMenu ? null : {'display': 'none'}}
+        >
+          <Sidebar turn_on={'Edit'}/>
+        </div>
+        <div 
+          className={classes.sidebar_mobile} 
+          // style={winWidth>768 ? null : isMenu ? null : {'display': 'none'}}
+          style={isMenu ? null : {'display': 'none'}}
+        >
+          <SidebarMobile turn_on={'Edit'}/>
         </div>
         <div className={classes.videos_container}>
             {/* <h1>Categories Homepage</h1> */}

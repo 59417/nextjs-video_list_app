@@ -2,6 +2,7 @@ import { Fragment, useEffect, useState } from "react";
 import Head from 'next/head';
 import classes from '../../../styles/Home.module.css';
 import Sidebar from '../../../components/sidebar/Sidebar';
+import SidebarMobile from '../../../components/sidebar/SidebarMobile';
 import Details from '../../../components/body/detail/Details';
 import GoBack from '../../../components/body/goback/GoBack';
 import { TAGS_DICT } from '../../../components/data';
@@ -15,15 +16,16 @@ function EditDetail (props) {
     const isMenu = props.menuState;
     const setMenu = props.setMenu;
 
-    const [winWidth, setWinWidth] = useState(0);
+    // const [winWidth, setWinWidth] = useState(0);
 
     useEffect(() => {
         setMenu(false);
-        window.addEventListener('resize', setWinWidth);
-        return () => {
-        window.removeEventListener('resize', setWinWidth(window.innerWidth))
-        }
-    }, [setMenu, winWidth]);
+        // window.addEventListener('resize', setWinWidth);
+        // return () => {
+        //   window.removeEventListener('resize', setWinWidth(window.innerWidth))
+        // }
+    }, [setMenu]);
+    // console.log(winWidth);
 
     return (
         <Fragment>
@@ -36,12 +38,18 @@ function EditDetail (props) {
                 <meta name="viewport" content="initial-scale=1.0, width=device-width, shrink-to-fit=no" />
             </Head>
             <div className={classes.body}>
-                {/* <div style={{'position': 'fixed', 'top': '160px'}} > */}
                 <div 
                     className={classes.sidebar} 
-                    style={winWidth>768 ? null : isMenu ? null : {'display': 'none'}}
-                >  
-                <Sidebar turn_on={'Edit'} className={classes.sidebar}/>
+                    // style={winWidth>768 ? null : isMenu ? null : {'display': 'none'}}
+                >
+                    <Sidebar turn_on={'Edit'}/>
+                </div>
+                <div 
+                    className={classes.sidebar_mobile} 
+                    // style={winWidth>768 ? null : isMenu ? null : {'display': 'none'}}
+                    style={isMenu ? null : {'display': 'none'}}
+                >
+                    <SidebarMobile turn_on={'Edit'}/>
                 </div>
                 <div className={classes.videos_container}>
                     {/* <h1>{JSON.stringify(videoData)}</h1> */}

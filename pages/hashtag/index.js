@@ -2,6 +2,7 @@ import { Fragment, useState, useEffect } from "react";
 import Head from 'next/head';
 import classes from '../../styles/Home.module.css';
 import Sidebar from '../../components/sidebar/Sidebar';
+import SidebarMobile from '../../components/sidebar/SidebarMobile';
 import TagsBody from '../../components/body/TagsBody';
 import GoBack from '../../components/body/goback/GoBack';
 
@@ -19,15 +20,16 @@ function Hashtag(props) {
   const isMenu = props.menuState;
   const setMenu = props.setMenu;
 
-  const [winWidth, setWinWidth] = useState(0);
+  // const [winWidth, setWinWidth] = useState(0);
 
   useEffect(() => {
     setMenu(false);
-    window.addEventListener('resize', setWinWidth);
-    return () => {
-      window.removeEventListener('resize', setWinWidth(window.innerWidth))
-    }
-  }, [setMenu, winWidth]);
+    // window.addEventListener('resize', setWinWidth);
+    // return () => {
+    //   window.removeEventListener('resize', setWinWidth(window.innerWidth))
+    // }
+  }, [setMenu]);
+  // console.log(winWidth);
   
   return (
     <Fragment>
@@ -42,9 +44,16 @@ function Hashtag(props) {
       <div className={classes.body} >
         <div 
           className={classes.sidebar} 
-          style={winWidth>768 ? null : isMenu ? null : {'display': 'none'}}
-        >    
+          // style={winWidth>768 ? null : isMenu ? null : {'display': 'none'}}
+        >
           <Sidebar turn_on={'Tags'}/>
+        </div>
+        <div 
+          className={classes.sidebar_mobile} 
+          // style={winWidth>768 ? null : isMenu ? null : {'display': 'none'}}
+          style={isMenu ? null : {'display': 'none'}}
+        >
+          <SidebarMobile turn_on={'Tags'}/>
         </div>
         <div className={classes.videos_container}>
           <TagsBody random_number={randomN} fetch_data={props.fetchData}/>

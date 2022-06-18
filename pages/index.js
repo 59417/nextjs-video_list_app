@@ -20,7 +20,7 @@ function HomePage(props) {
   const isMenu = props.menuState;
   const setMenu = props.setMenu;
 
-  const [winWidth, setWinWidth] = useState(0);
+  // const [winWidth, setWinWidth] = useState(0);
 
   useEffect(() => {
     setMenu(false);
@@ -28,7 +28,7 @@ function HomePage(props) {
     // return () => {
     //   window.removeEventListener('resize', setWinWidth(window.innerWidth))
     // }
-  }, [setMenu, winWidth]);
+  }, [setMenu]);
   // console.log(winWidth);
 
   return (

@@ -2,6 +2,7 @@ import { Fragment, useEffect, useState } from "react";
 import Head from 'next/head';
 import classes from '../../styles/Home.module.css';
 import Sidebar from '../../components/sidebar/Sidebar';
+import SidebarMobile from '../../components/sidebar/SidebarMobile';
 import SelectContainer from '../../components/body/SelectContainer';
 import GoBack from '../../components/body/goback/GoBack';
 import { TAGS_DICT, FAVORITE_IDS, CATEGORY_IDS } from '../../components/mongodb_data';
@@ -15,15 +16,16 @@ function Categories(props) {
   const isMenu = props.menuState;
   const setMenu = props.setMenu;
 
-  const [winWidth, setWinWidth] = useState(0);
+  // const [winWidth, setWinWidth] = useState(0);
 
   useEffect(() => {
     setMenu(false);
-    window.addEventListener('resize', setWinWidth);
-    return () => {
-      window.removeEventListener('resize', setWinWidth(window.innerWidth))
-    }
-  }, [setMenu, winWidth]);
+    // window.addEventListener('resize', setWinWidth);
+    // return () => {
+    //   window.removeEventListener('resize', setWinWidth(window.innerWidth))
+    // }
+  }, [setMenu]);
+  // console.log(winWidth);
 
   return (
     <Fragment>
@@ -38,9 +40,16 @@ function Categories(props) {
       <div className={classes.body}>
         <div 
           className={classes.sidebar} 
-          style={winWidth>768 ? null : isMenu ? null : {'display': 'none'}}
-        >     
+          // style={winWidth>768 ? null : isMenu ? null : {'display': 'none'}}
+        >
           <Sidebar turn_on={'Cats'}/>
+        </div>
+        <div 
+          className={classes.sidebar_mobile} 
+          // style={winWidth>768 ? null : isMenu ? null : {'display': 'none'}}
+          style={isMenu ? null : {'display': 'none'}}
+        >
+          <SidebarMobile turn_on={'Cats'}/>
         </div>
         <div className={classes.videos_container}>
             <SelectContainer fetch_data={props.fetchData} categories={catsData} />
