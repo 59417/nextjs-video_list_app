@@ -63,7 +63,7 @@ export async function getServerSideProps(context) {
     const res = await fetch(`${process.env.API_URL}/api/favorite`);
     const data = await res.json();
     return {
-      props: { favsData: data ? data : FAVORITE_IDS },
+      props: { favsData: FAVORITE_IDS },
     }
   } catch (error) {
     return {

@@ -62,7 +62,7 @@ export async function getServerSideProps(context) {
     const res = await fetch(`${process.env.API_URL}/api/category`);
     const data = await res.json();
     return {
-      props: { catsData: data ? data : CATEGORY_IDS },
+      props: { catsData: CATEGORY_IDS },
     }
   } catch (error) {
     return {

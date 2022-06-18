@@ -22,20 +22,18 @@ MyApp.getInitialProps = async (appContext) => {
     const data = await res.json();
     return {
       pageProps: { 
-        fetchData: data ? data : ALL_LIST,
-        importData: {
-          allData: ALL_LIST,
-          tagsData: TAGS_DICT,
-          favsData: FAVORITE_IDS,
-          catsData: CATEGORY_IDS
-        }
+        fetchData: ALL_LIST,
+        // importData: {
+        //   tagsData: TAGS_DICT,
+        //   favsData: FAVORITE_IDS,
+        //   catsData: CATEGORY_IDS
+        // }
     }};
   } catch (error) {
     return {
       pageProps: { 
         fetchData: ALL_LIST,
         // importData: {
-          // allData: ALL_LIST,
         //   tagsData: TAGS_DICT,
         //   favsData: FAVORITE_IDS,
         //   catsData: CATEGORY_IDS

@@ -76,9 +76,9 @@ export async function getServerSideProps(context) {
     return {
       props: { 
         marqueeData: {
-          movies: favsMovie ? favsMovie : FAVORITE_IDS.find(obj => obj.filter === 'movie'),
-          series: favsSeries? favsSeries : FAVORITE_IDS.find(obj => obj.filter === 'series'),
-          docus: docus ? docus : CATEGORY_IDS.find(obj => obj.filter === 'documentaries'),
+          movies: FAVORITE_IDS.find(obj => obj.filter === 'movie'),
+          series: FAVORITE_IDS.find(obj => obj.filter === 'series'),
+          docus: CATEGORY_IDS.find(obj => obj.filter === 'documentaries'),
         },
       },
     }
