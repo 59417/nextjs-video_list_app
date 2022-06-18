@@ -193,5 +193,20 @@ To github.com:59417/nextjs-video_list_app.git
 分支 'main' 設定為追蹤來自 'origin' 的遠端分支 'main'。
 
 
+-------------------  git v.4  --------------------
 
-
+(base) a17@17de-MBP video-list-app % git add .                               
+(base) a17@17de-MBP video-list-app % git commit -m "Use import data in getServerSideProps"  
+[main 53b502b] Use import data in getServerSideProps
+ 10 files changed, 40 insertions(+), 19 deletions(-)
+(base) a17@17de-MBP video-list-app % git push -u origin main                               
+枚舉物件: 29, 完成.
+物件計數中: 100% (29/29), 完成.
+使用 2 個執行緒進行壓縮
+壓縮物件中: 100% (14/14), 完成.
+寫入物件中: 100% (15/15), 1.52 KiB | 1.52 MiB/s, 完成.
+總共 15 (差異 11)，復用 0 (差異 0)，重用包 0
+remote: Resolving deltas: 100% (11/11), completed with 11 local objects.
+To github.com:59417/nextjs-video_list_app.git
+   1a4d0f1..53b502b  main -> main
+分支 'main' 設定為追蹤來自 'origin' 的遠端分支 'main'。

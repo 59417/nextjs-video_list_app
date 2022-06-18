@@ -70,10 +70,10 @@ export async function getStaticPaths () {
 };
 
 
-export async function getStaticProps (context, props) {
+export async function getStaticProps (context) {
     // const params =  context.params;
     const videoId = context.params.editId; 
-    const ALL_LIST = props.fetch_data;
+    // const ALL_LIST = props.fetch_data;
     const videoTarget = ALL_LIST.find((element) => (
         element['videoid'] === videoId
         ));
