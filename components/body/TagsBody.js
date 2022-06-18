@@ -49,7 +49,7 @@ function TagsBody(props) {
 
     return (
         <div className={classes.wrapper}>
-            <div className={classes.tag}>
+            <div className={classes.tag} style={{overflowWrap: 'break-word'}}>
                 {newAllTags.flat().map((tag) => (
                      <Link href={`/hashtag/${tag}`} key={tag} >
                         <span className={getClass(tag+randomN)} style={{cursor: 'pointer', overflowWrap: 'break-word'}}>
