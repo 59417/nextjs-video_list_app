@@ -414,3 +414,22 @@ remote: Resolving deltas: 100% (5/5), completed with 5 local objects.
 To github.com:59417/nextjs-video_list_app.git
    d91f71e..8731206  main -> main
 分支 'main' 設定為追蹤來自 'origin' 的遠端分支 'main'。
+
+
+-------------------  git v.15  --------------------
+
+(base) a17@17de-MBP video-list-app % git add .                           
+(base) a17@17de-MBP video-list-app % git commit -m "Modify TagsBody tag span to div"  
+[main 8e26135] Modify TagsBody tag span to div
+ 2 files changed, 7 insertions(+), 4 deletions(-)
+(base) a17@17de-MBP video-list-app % git push -u origin main                         
+枚舉物件: 11, 完成.
+物件計數中: 100% (11/11), 完成.
+使用 2 個執行緒進行壓縮
+壓縮物件中: 100% (6/6), 完成.
+寫入物件中: 100% (6/6), 644 位元組 | 644.00 KiB/s, 完成.
+總共 6 (差異 5)，復用 0 (差異 0)，重用包 0
+remote: Resolving deltas: 100% (5/5), completed with 5 local objects.
+To github.com:59417/nextjs-video_list_app.git
+   68b6a9a..8e26135  main -> main
+分支 'main' 設定為追蹤來自 'origin' 的遠端分支 'main'。

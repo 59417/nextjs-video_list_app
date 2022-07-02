@@ -31,7 +31,6 @@ function Detail(props) {
             return '・Series/Show'
         }
     };
-    const test = [];
 
     function getTagNo(tag) {
         const tagNo = tagsId[tags.indexOf(tag)];
@@ -71,9 +70,9 @@ function Detail(props) {
             <div className={classes.description}>
                 <h2>{videoData.description}</h2>
             </div>   
-            <div className={classes.other}>
+            {/* <div className={classes.other}>
                 <h3>推薦閱讀 | 相關影評</h3>
-            </div>
+            </div> */}
         </div>
     )
 };
